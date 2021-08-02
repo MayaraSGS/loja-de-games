@@ -5,11 +5,11 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.loja_de_jogos.lojaDeGames.model.lojaDeGames;
+import com.loja_de_jogos.lojaDeGames.model.LojaDeGames;
 
 @Repository
-public interface lojaDeGamesRepository extends JpaRepository<lojaDeGames, Long>{
+public interface LojaDeGamesRepository extends JpaRepository<LojaDeGames, Long>{
 	
-	public List<lojaDeGames> findAllByNomeContainingIgnoreCase(String nome);
+	public List<LojaDeGames> findAllByNomeContainingIgnoreCase(String nome);
 
 }
